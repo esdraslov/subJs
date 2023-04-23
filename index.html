@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subJs</title>
+    <style>
+        .result {
+            border: 1px dashed blue;
+            height: 200px;
+            padding: 5px;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="title">subJs</div>
+        <div class="description" hidden>turn all more simple</div>
+    </div>
+    basic funcitions:
+    <ul>
+        <li>
+            <h1 title="(porperty): newTag: (tag: any) => {...} => any">newTag</h1>
+            <p>tag -> a child/node</p>
+        </li>
+        <li>
+            <h1 title="(porperty): newTag: (trusterTemplate?: string, tag: any) => {...} => string">setTagTruster</h1>
+            <p>tag -> a child/node created</p>
+            <p>trusterTemplate -> string optional</p>
+        </li>
+        <li>
+            <h1 title="(porperty): newTag: (tag: any, truster: any, child?: HTMLElement) => {...} => void">showTag</h1>
+            <p>tag -> a child/node created</p>
+            <p>truster -> the truster created</p>
+            <p>child -> a html tag</p>
+        </li>
+        <li>
+            <h1 title="(property) setTagText: (text: any, tag: any) => void">setTagText</h1>
+            <p>tag -> a child/node created</p>
+            <p>text -> the text</p>
+        </li>
+        <li>eventList</li>
+        <ul>
+            <li>
+                <h1 title="(property) onEventGeted: (child: any, event: any, func?: () => void) => void">onEventGeted</h1>
+                <p>child -> a child/node created</p>
+                <p>event -> the event(of the addEventListener)</p>
+            </li>
+            <li>
+                <h1 title="(property) removeOnEventGeted: (child: any, event: any, func?: () => void) => void">removeOnEventGeted</h1>
+                <p>child -> a child/node created</p>
+                <p>event -> the event(of the removeEventListener)</p>
+            </li>
+        </ul>
+    </ul>
+    <div class="result">
+        <button class="resultBtn">change text</button>
+        <button class="reload">reload</button>
+    </div>
+    <end endding-direction="https://replit.com" endding-scale="220" endding-margin="10" endding-letter-color="cyan">
+        made by esdraslov
+    </end>
+    <script src="subJs.js"></script>
+    <script src="script.js"></script>
+    <script src="ending.js"></script>
+    <noscript>
+        please active the javascript or update your browser
+    </noscript>
+</body>
+</html>
