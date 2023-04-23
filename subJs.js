@@ -66,7 +66,7 @@ let subJs = {
     Reload: function(){
         window.location.reload()
     },
-    isNumber: function(expression){
+    isNumber: function(expression = 0 || "0"){
         let ret = false
         if(
             expression.charAt(0) == 0
@@ -89,6 +89,15 @@ let subJs = {
             ||
             expression.charAt(0) == 9
           ){
+            ret = true
+        }
+        return ret
+    },
+    isFakeTruster: function(truster, tag, trusterTemplate = 'defaultTruster'){
+        let ret = false
+        if(
+            truster != trusterTemplate + 'Truster' + tag
+        ){
             ret = true
         }
         return ret
