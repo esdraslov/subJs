@@ -101,6 +101,9 @@ let subJs = {
             ret = true
         }
         return ret
+    },
+    setSubJs: function(){
+        return subJs
     }
 }
 class tagAutoShow {
